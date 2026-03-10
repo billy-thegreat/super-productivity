@@ -397,7 +397,7 @@
         "ERR_GENERIC": "{{issueProviderName}} Error: {{errTxt}}",
         "ERR_NETWORK": "{{issueProviderName}}: Request failed because of a client side network error",
         "ERR_NOT_CONFIGURED": "{{issueProviderName}}: Not properly configured",
-        "TWO_WAY_SYNC_PUSH_FAILED": "Two-way sync: Insufficient permissions to update issue. Check your credentials.",
+        "TWO_WAY_SYNC_PUSH_FAILED": "Two-way sync push failed: {{errorMsg}}",
         "IMPORTED_MULTIPLE_ISSUES": "{{issueProviderName}}: Imported {{nr}} new {{issuesStr}}",
         "IMPORTED_SINGLE_ISSUE": "{{issueProviderName}}: Imported {{issueStr}} \"{{issueTitle}}\"",
         "ISSUE_NO_UPDATE_REQUIRED": "{{issueProviderName}}: No update required",
@@ -407,7 +407,7 @@
         "POLLING_CHANGES": "{{issueProviderName}}: Polling Changes for {{issuesStr}}",
         "CONNECTION_SUCCESS": "Connection works!",
         "CONNECTION_FAILED": "Connection failed",
-        "AUTO_CREATE_FAILED": "Failed to auto-create issue",
+        "AUTO_CREATE_FAILED": "Auto-create issue failed: {{errorMsg}}",
         "PLUGIN_NOT_INSTALLED": "Required plugin \"{{pluginName}}\" is not installed."
       },
       "DIALOG": {
@@ -1439,6 +1439,8 @@
         "TOOLTIP_CLEAR_DATE": "Clear date",
         "TOOLTIP_CLEAR_ESTIMATE": "Clear estimate",
         "TOOLTIP_CLEAR_TAGS": "Clear tags",
+        "REPEAT_BUTTON": "Repeat",
+        "TOOLTIP_CLEAR_REPEAT": "Clear repeat setting",
         "TOOLTIP_DISABLE_SEARCH": "Disable issue search (Ctrl+2)",
         "TOOLTIP_ENABLE_SEARCH": "Enable issue search (Ctrl+2)"
       },
@@ -1612,6 +1614,7 @@
         "MSG": "Remove the recurring task instance on {{date}}? This will prevent the task from being created on this date only.",
         "OK": "Remove Instance"
       },
+      "SNACK_REPEAT_DIALOG_FAIL": "Could not open repeat config dialog. You can configure it from the task menu.",
       "D_EDIT": {
         "ADD": "Add Recurring Task Config",
         "ADVANCED_CFG": "Advanced configuration",
